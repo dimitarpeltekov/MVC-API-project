@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Jokes";
+    var setup = ViewBag.Setup;
+    var delivery = ViewBag.Delivery;
+    var joke = ViewBag.Joke;
+}
+
+<h2>You want to hear a joke?</h2>
+<br />
+<br />
+<img src="https://pics.me.me/thumb_meme-laughing-guy-49133671.png" />
+<br />
+<br />
+
+@using (Html.BeginForm("JokeEndpoint", "Joke"))
+{
+    <input type="submit" value="Generate Joke" />
+
+}
+
+<br />
+<br />
+
+@if (string.IsNullOrEmpty(setup) && string.IsNullOrEmpty(delivery))
+{
+    <div class="jokes">
+        <p>@joke</p>
+    </div>
+}
+
+@if (string.IsNullOrEmpty(joke) == true)
+{
+    <div class="jokes">
+        <p>@setup</p>
+       
+    </div>
+    <div class="jokes">
+        
+        <p>@delivery</p>
+    </div>
+}

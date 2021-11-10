@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h1>Check the validity of you Vignette</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bulgaria-automobile-license-plate.png" />
+<br /><br />
+@using (Html.BeginForm())
+{
+    <p>
+        You are searching for car with number: @Html.TextBox("searchNumber")
+        <input type="submit" value="Search" />
+    </p>
+} 
+
+ 
+
+<h2>
+    Vignette number: @ViewBag.vignetteNumber <br />
+    Vehicle Class: @ViewBag.vehicleClass <br />
+    Validity Date From: @ViewBag.validityDateFromFormated <br />
+    Validity Date To: @ViewBag.validityDateToFormated <br />
+</h2>
+
+    <br/><br />
+
+ 

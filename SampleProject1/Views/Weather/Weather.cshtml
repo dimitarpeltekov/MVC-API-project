@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Weather";
+}
+
+
+<h2>You are observing the weather in : @ViewBag.cityname</h2>
+<br />
+<br />
+@using (Html.BeginForm())
+{
+    <p>
+        Please specify a city: @Html.TextBox("citySearch")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+
+<h2>
+    City: @ViewBag.cityname <br />
+    Temperature: @ViewBag.temperature <br />
+    Current: @ViewBag.rain <br />
+    <img src="@ViewBag.image" />
+</h2>
+
+<br />
+<br />
+
+

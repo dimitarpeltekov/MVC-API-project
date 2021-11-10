@@ -1,0 +1,54 @@
+﻿<html >
+<head >
+<style >
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+   
+}
+.jokes {
+    color: #f2f2f2;
+    background: #ff4a4a;
+    font-size: 75px;
+    line-height: 74px;
+    font-weight: 700;
+    margin: 0 5px 24px;
+    float: left;
+    padding: 10px;
+    margin: 0 5px 24px;
+    font-family: 'Libre Baskerville', serif;
+}
+   
+    
+
+
+    div {
+        text-align: center;
+    }
+.cats {
+    color: #ff4411;
+    font-family: 'Raleway',sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+</style >
+</head >
+<body >
